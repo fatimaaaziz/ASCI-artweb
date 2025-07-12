@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ascii Art Generator</title>
+   <style>
+     body {
+      background: #e8f0fe;
+      color: #222;
+      margin: 2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 10px auto;
+      padding: 10rem;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #bbb;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      font-size: 1rem;
+      margin: 0.5rem 0 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      resize: vertical;
+    }
+
+    label {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    button {
+      background: #04346b;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #357abd;
+    }
+
+    .result-box {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f7f9fc;
+      border: 1px solid #ddd;
+      white-space: pre;
+      height: 180px;
+      overflow: auto;
+      border-radius: 3px;
+      font-weight: normal;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+  </style> 
+</head>
+<body>
+  <div class="container">
+    <h1>Ascii Art Generator</h1>
+
+    <form action="/ascii-art" method="POST">
+      <label for="text">Enter text:</label>
+      <textarea id="text" name="text" required maxlength="1000"></textarea>
+
+      <div>
+        <label><input type="radio" name="banner" value="standard" checked /> Standard</label>
+        <label><input type="radio" name="banner" value="shadow" /> Shadow</label>
+        <label><input type="radio" name="banner" value="thinkertoy" /> Thinkertoy</label>
+      </div>
+
+      <div style="margin-top: 1rem;">
+        <button type="submit">Generate ASCII Art</button>
+      </div>
+    </form>
+
+    <div class="result-box">
+      <pre>{{.Result}}</pre>
+    </div>
+  </div>
+</body>
+</html>
