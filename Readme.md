@@ -14,9 +14,7 @@ ASCII Art Web is a simple web application that runs a local server to provide a 
 | |  | | |  __/ | | | | | (_) |          \  /\  /    | (_) | | |    | | | (_| | 
 |_|  |_|  \___| |_| |_|  \___/            \/  \/      \___/  |_|    |_|  \__,_| 
 ```
-## Authors
 
-- Fatima Aaziz
 ## Usage
 ### Usage: how to run
 #### 1_Run the following command in your terminal:
