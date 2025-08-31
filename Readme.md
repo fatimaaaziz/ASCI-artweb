@@ -1,3 +1,9 @@
+##Project members github:
+https://github.com/YounsseAmazzal
+https://github.com/fatimaaaziz
+https://github.com/nchakrou
+
+
 ## ascii-art-web Description
 ASCII Art Web is a simple web application that runs a local server to provide a graphical user interface (GUI) for converting text into ASCII art. Users can access the application via their web browser using a local URL (e.g., http://localhost:8080) and generate stylized ASCII art from input text.
 
